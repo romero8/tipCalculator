@@ -1,0 +1,26 @@
+.box{
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+label{
+    color: hsl(186, 14%, 43%);
+    font-weight: 500;
+}
+
+input{
+    background-color: hsl(189, 41%, 97%);
+    width: 18vw;
+    border: none;
+    border-radius:3% ;
+    height: 40px;
+    font-size: 18px;
+    direction: rtl;
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    padding: 5px;
+}
+
