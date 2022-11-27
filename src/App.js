@@ -1,21 +1,25 @@
-import { Input } from "./components/Input";
 import "./App.css";
-import { Button } from "./components/Button";
+import { Input } from "./components/Input";
+import { Button, ResetBtn } from "./components/Button";
 import { SummaryItem } from "./components/SummaryItem";
 import { useState } from "react";
 
 function App() {
-  const [bill, setBill] = useState("");
-  const [peopleNumber, setPeopleNumber] = useState("");
-  const [tipAmount, setTipAmount] = useState("");
-  const [totalTip, setTotalTip] = useState("");
+  const [bill, setBill] = useState(0);
+  const [peopleNumber, setPeopleNumber] = useState(0);
+  const [tipAmount, setTipAmount] = useState(0);
+  const [totalTip, setTotalTip] = useState(0);
 
- 
   return (
     <div className="body">
       <div className="container">
         <div className="calculate">
-          <Input label="Bill" set={setBill}></Input>
+          <Input
+            label="Bill"
+            set={setBill}
+            peopleNumber={peopleNumber}
+            bill={bill}
+          ></Input>
           <div className="tipBox">
             <label>Select Tip %</label>
             <div className="tips">
@@ -60,7 +64,7 @@ function App() {
                 totalTip={setTotalTip}
               ></Button>
               <input
-              type={'number'}
+                type={"number"}
                 className="custom"
                 placeholder="Custom"
                 onChange={(e) => {
@@ -71,15 +75,24 @@ function App() {
             </div>
           </div>
           <br></br>
-          <Input label="Number Of People" set={setPeopleNumber}></Input>
+          <Input
+            label="Number Of People"
+            set={setPeopleNumber}
+            peopleNumber={peopleNumber}
+            bill={bill}
+          ></Input>
         </div>
         <div className="summary">
           <div>
             <SummaryItem text={"Tip Amount"} summary={tipAmount}></SummaryItem>
             <SummaryItem text={"Total"} summary={totalTip}></SummaryItem>
           </div>
-          <div className="resetBtn">
-            <button className="btn">RESET</button>
+
+          <div className="resetBbox">
+            <ResetBtn
+              setBill={setBill}
+              setPeopleNumber={setPeopleNumber}
+            ></ResetBtn>
           </div>
         </div>
       </div>

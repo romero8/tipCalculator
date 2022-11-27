@@ -1,15 +1,15 @@
-.itemBox{
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
+.itemBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
 }
 
-h4{
-    color:hsl(0, 0%, 100%);
+h4 {
+  color: hsl(0, 0%, 100%);
 }
 
-p{
-    font-size: 30px;
-    color: hsl(172, 67%, 45%);
-    font-weight: bold;
+p {
+  font-size: 30px;
+  color: hsl(172, 67%, 45%);
+  font-weight: bold;
 }

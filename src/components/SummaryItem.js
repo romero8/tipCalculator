@@ -1,8 +1,8 @@
-import './SummaryItem.css'
+import "./SummaryItem.css";
 
 export function SummaryItem(props) {
   const text = props.text;
-  const summary = props.summary
+  const summary = props.summary;
 
   return (
     <div className="itemBox">

@@ -1,19 +1,41 @@
-.defaultBtn{
-    height: 40px;
-    min-width: 5vw;
-    margin: 5px;
-    padding: 5px;
-    cursor: pointer;
-    background-color: hsl(183, 100%, 15%);
-    color: hsl(0, 0%, 100%);
-    border: none;
-    border-radius: 10%;
-    font-size: 1em;
-    font-weight: bold;
+.defaultBtn {
+  height: 40px;
+  min-width: 5vw;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 10%;
+  font-size: 1em;
+  font-weight: bold;
 }
 
+.defaultBtn.active {
+  background-color: hsl(185, 41%, 84%);
+  color: var(--very-dark-cyan);
+}
 
-button:hover{
-    background-color: hsl(172, 67%, 45%);
-    color:hsl(183, 100%, 15%) ;
+button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.resetBtn {
+  min-width: 12vw;
+  height: 40px;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: var(--brand);
+  color: var(--very-dark-cyan);
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 2%;
+}
+
+.resetBtn:hover {
+  background-color: var(--light-grayish-cyan);
 }
